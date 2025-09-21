@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="CodeName: something1">
+  <meta name="keywords" content="CodeName">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CodeName: SOMETHING2</title>
+
+  <!-- <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet"> -->
+  <link href="./static/css/googlefonts.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+  <!-- <link rel="icon" href="./static/images/icon.png"> -->
+
+  <script src="./static/js/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+  <script src="./static/js/video_comparison.js"></script>
+
+  <script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>        
+  
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+});
+</script>
+
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body", style="padding-bottom: 0rem;">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">CodeName: SOMETHING3</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              Youyu Chen<sup>1#</sup>&nbsp; 
+              <a href="https://homepage.hit.edu.cn/jiangjunjun?lang=zh">Junjun Jiang<sup>1†</sup></a>&nbsp;
+              <a href="https://homepage.hit.edu.cn/jiangkui">Kui Jiang<sup>1</sup></a>&nbsp;
+              <a href="https://wbstx.github.io/">Xiao Tang<sup>2</sup></a>&nbsp;
+              <a href="https://scholar.google.com/citations?hl=en&user=4cuefJ0AAAAJ">Zhihao Li<sup>2</sup></a>&nbsp;
+              <a href="https://homepage.hit.edu.cn/xmliu">Xianming Liu<sup>1</sup></a>&nbsp;
+              <a href="https://yinyunie.github.io/">Yinyu Nie<sup>2</sup></a>&nbsp;
+            </span>
+          </div>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block", style="color:#726f6f"><sup>1</sup>Harbin Institute of Technology&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span class="author-block", style="color:#726f6f"><sup>2</sup>Huawei Noah's Ark Lab&nbsp;&nbsp;&nbsp;&nbsp;</span>
+          </div>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block", style="font-size: 15px;color:#726f6f">chenyouyu@stu.hit.edu.cn&nbsp;&nbsp;</span>
+            <span class="author-block", style="font-size: 15px;color:#726f6f">jiangjunjun@hit.edu.cn&nbsp;&nbsp;</span>
+            <span class="author-block", style="font-size: 15px;color:#726f6f">tangxiao12@huawei.com&nbsp;&nbsp;</span>
+          </div>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block", style="font-size: 15px;color:#726f6f"><sup>†&nbsp;</sup>Corresponding author&nbsp;&nbsp; <sup>#</sup> This work was done during he was an intern at Huawei. </span>
+          </div>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block", style="color:#367DBD";>CVPR 2025 (Highlight)</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2503.18402"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://github.com/Git-dreamer/CodeName"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>github</span>
+                  </a>
+              </span>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">What is CodeName?</h2>
+      </div>
+    </div>
+    <div class="content has-text-justified">
+      <p>
+        CodeName is a plug-and-play 3DGS training acceleration method which smartly allocates the computational complexity over the optimization process. 
+        CodeName reduces the training time-cost by 45.7% on average over various datasets and different backbones, while preserving and even improving the rendering quality.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="columns is-four-fifths">
+        <div class="tabs-widget">
+          <h2 class="title is-3">Training Process Visualization</h2>
+          <p>
+            We demonstrate how CodeName accelerates the training process of different backbones on various scenes.
+          </p>
+          <br>
+          <div class="tabs is-centered">
+            <ul class="is-marginless">
+              <li><a>Taming-3DGS</a></li>
+              <li><a>3DGS</a></li>
+              <li><a>Mip-Splatting</a></li>
+            </ul>
+          </div>
+          <div class="tabs-content">
+            <!-- Begin Taming-3DGS -->
+            <div>
+              <div class="tabs-widget">
+                <div class="tabs is-centered is-toggle is-toggle-rounded is-small">
+                  <ul class="is-marginless">
+                    <li><a>Truck</a></li>
+                    <li><a>Train</a></li>
+                    <li><a>Treehill</a></li>
+                    <li><a>Flowers</a></li>
+                    <li><a>Garden</a></li>
+                    <li><a>Stump</a></li>
+                    <li><a>Bicycle</a></li>
+                    <li><a>Room</a></li>
+                    <li><a>Kitchen</a></li>
+                    <li><a>Counter</a></li>
+                    <li><a>Bonsai</a></li>
+                    <li><a>Drjohnson</a></li>
+                    <li><a>Playroom</a></li>
+                  </ul>
+                </div>
+                <div class="content has-text-centered is-size-7-mobile">
+                  'Ours' denotes enhancing the backbone (Taming-3DGS) with CodeName. 
+                  <br>
+                  Fullscreen the videos to view better.
+                </div>
+                <div class="tabs-content">
+                  <div class="item item-comp-taming-truck">
+                    <video poster="" id="id-comp-taming-truck" autoplay controls muted playsinline width="100%" style="border-radius: 10px;">
+                      <source src="./static/videos/cmp_taming/taming-truck-comp-text_batch.mp4"
+                              type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="item item-comp-taming-train">
+                    <video poster="" id="id-comp-taming-train" autoplay controls muted playsinline width="100%" style="border-radius: 10px;">
+                      <source src="./static/videos/cmp_taming/taming-train-comp-text_batch.mp4"
+                              type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="item item-comp-taming-treehill">
+                    <video poster="" id="id-comp-taming-treehill" autoplay controls muted playsinline width="100%" style="border-radius: 10px;">
+                      <source src="./static/videos/cmp_taming/taming-treehill-comp-text_batch.mp4"
+                              type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="item item-comp-taming-flowers">
+                    <video poster="" id="id-comp-taming-flowers" autoplay controls muted playsinline width="100%" style="border-radius: 10px;">
+                      <source src="./static/videos/cmp_taming/taming-flowers-comp-text_batch.mp4"
+                              type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="item item-comp-taming-garden">
+                    <video poster="" id="id-comp-taming-garden" autoplay controls muted playsinline width="100%" style="border-radius: 10px;">
+                      <source src="./static/videos/cmp_taming/taming-garden-comp-text_batch.mp4"
+                              type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="item item-comp-taming-stump">
+                    <video poster="" id="id-comp-taming-stump" autoplay controls muted playsinline width="100%" style="border-radius: 10px;">
+                      <source src="./static/videos/cmp_taming/taming-stump-comp-text_batch.mp4"
+                              type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="item item-comp-taming-bicycle">
+                    <video poster="" id="id-comp-taming-bicycle" autoplay controls muted playsinline width="100%" style="border-radius: 10px;">
+                      <source src="./static/videos/cmp_taming/taming-bicycle-comp-text_batch.mp4"
+                              type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="item item-comp-taming-room">
+                    <video poster="" id="id-comp-taming-room" autoplay controls muted playsinline width="100%" style="border-radius: 10px;">
+                      <source src="./static/videos/cmp_taming/taming-room-comp-text_batch.mp4"
+                              type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="item item-comp-taming-kitchen">
+                    <video poster="" id="id-comp-taming-kitchen" autoplay controls muted playsinline width="100%" style="border-radius: 10px;">
+                      <source src="./static/videos/cmp_taming/taming-kitchen-comp-text_batch.mp4"
+                              type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="item item-comp-taming-counter">
+                    <video poster="" id="id-comp-taming-counter" autoplay controls muted playsinline width="100%" style="border-radius: 10px;">
+                      <source src="./static/videos/cmp_taming/taming-counter-comp-text_batch.mp4"
+                              type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="item item-comp-taming-bonsai">
+                    <video poster="" id="id-comp-taming-bonsai" autoplay controls muted playsinline width="100%" style="border-radius: 10px;">
+                      <source src="./static/videos/cmp_taming/taming-bonsai-comp-text_batch.mp4"
+                              type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="item item-comp-taming-drjohnson">
+                    <video poster="" id="id-comp-taming-drjohnson" autoplay controls muted playsinline width="100%" style="border-radius: 10px;">
+                      <source src="./static/videos/cmp_taming/taming-drjohnson-comp-text_batch.mp4"
+                              type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="item item-comp-taming-playroom">
+                    <video poster="" id="id-comp-taming-playroom" autoplay controls muted playsinline width="100%" style="border-radius: 10px;">
+                      <source src="./static/videos/cmp_taming/taming-playroom-comp-text_batch.mp4"
+                              type="video/mp4">
+                    </video>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End Taming-3DGS -->
+            <!-- Begin 3DGS -->
+            <div>
+              <div class="tabs-widget">
+                <div class="tabs is-centered is-toggle is-toggle-rounded is-small">
+                  <ul class="is-marginless">
+                    <li><a>Truck</a></li>
+                    <li><a>Train</a></li>
+                    <li><a>Treehill</a></li>
+                    <li><a>Flowers</a></li>
+                    <li><a>Garden</a></li>
+                    <li><a>Stump</a></li>
+                    <li><a>Bicycle</a></li>
+                    <li><a>Room</a></li>
+                    <li><a>Kitchen</a></li>
+                    <li><a>Counter</a></li>
+                    <li><a>Bonsai</a></li>
+                    <li><a>Drjohnson</a></li>
+                    <li><a>Playroom</a></li>
+                  </ul>
+                </div>
+                <div class="content has-text-centered is-size-7-mobile">
+                  'Ours' denotes enhancing the backbone (3DGS) with CodeName. 
+                  <br>
+                  Fullscreen the videos to view better.
+                </div>
+                <div class="tabs-content">
+                  <div class="item item-comp-3dgs-truck">
+                    <video poster="" id="id-comp-3dgs-truck" autoplay controls muted playsinline width="100%" style="border-radius: 10px;">
+                      <source src="./static/videos/cmp_3dgs/3dgs-truck-comp-text_batch.mp4"
+                              type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="item item-comp-3dgs-train">
+                    <video poster="" id="id-comp-3dgs-train" autoplay controls muted playsinline width="100%" style="border-radius: 10px;">
+                      <source src="./static/videos/cmp_3dgs/3dgs-train-comp-text_batch.mp4"
+                              type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="item item-comp-3dgs-treehill">
+                    <video poster="" id="id-comp-3dgs-treehill" autoplay controls muted playsinline width="100%" style="border-radius: 10px;">
+                      <source src="./static/videos/cmp_3dgs/3dgs-treehill-comp-text_batch.mp4"
+                              type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="item item-comp-3dgs-flowers">
+                    <video poster="" id="id-comp-3dgs-flowers" autoplay controls muted playsinline width="100%" style="border-radius: 10px;">
+                      <source src="./static/videos/cmp_3dgs/3dgs-flowers-comp-text_batch.mp4"
+                              type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="item item-comp-3dgs-garden">
+                    <video poster="" id="id-comp-3dgs-garden" autoplay controls muted playsinline width="100%" style="border-radius: 10px;">
+                      <source src="./static/videos/cmp_3dgs/3dgs-garden-comp-text_batch.mp4"
+                              type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="item item-comp-3dgs-stump">
+                    <video poster="" id="id-comp-3dgs-stump" autoplay controls muted playsinline width="100%" style="border-radius: 10px;">
+                      <source src="./static/videos/cmp_3dgs/3dgs-stump-comp-text_batch.mp4"
+                              type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="item item-comp-3dgs-bicycle">
+                    <video poster="" id="id-comp-3dgs-bicycle" autoplay controls muted playsinline width="100%" style="border-radius: 10px;">
+                      <source src="./static/videos/cmp_3dgs/3dgs-bicycle-comp-text_batch.mp4"
+                              type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="item item-comp-3dgs-room">
+                    <video poster="" id="id-comp-3dgs-room" autoplay controls muted playsinline width="100%" style="border-radius: 10px;">
+                      <source src="./static/videos/cmp_3dgs/3dgs-room-comp-text_batch.mp4"
+                              type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="item item-comp-3dgs-kitchen">
+                    <video poster="" id="id-comp-3dgs-kitchen" autoplay controls muted playsinline width="100%" style="border-radius: 10px;">
+                      <source src="./static/videos/cmp_3dgs/3dgs-kitchen-comp-text_batch.mp4"
+                              type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="item item-comp-3dgs-counter">
+                    <video poster="" id="id-comp-3dgs-counter" autoplay controls muted playsinline width="100%" style="border-radius: 10px;">
+                      <source src="./static/videos/cmp_3dgs/3dgs-counter-comp-text_batch.mp4"
+                              type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="item item-comp-3dgs-bonsai">
+                    <video poster="" id="id-comp-3dgs-bonsai" autoplay controls muted playsinline width="100%" style="border-radius: 10px;">
+                      <source src="./static/videos/cmp_3dgs/3dgs-bonsai-comp-text_batch.mp4"
+                              type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="item item-comp-3dgs-drjohnson">
+                    <video poster="" id="id-comp-3dgs-drjohnson" autoplay controls muted playsinline width="100%" style="border-radius: 10px;">
+                      <source src="./static/videos/cmp_3dgs/3dgs-drjohnson-comp-text_batch.mp4"
+                              type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="item item-comp-3dgs-playroom">
+                    <video poster="" id="id-comp-3dgs-playroom" autoplay controls muted playsinline width="100%" style="border-radius: 10px;">
+                      <source src="./static/videos/cmp_3dgs/3dgs-playroom-comp-text_batch.mp4"
+                              type="video/mp4">
+                    </video>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End 3DGS -->
+            <!-- Begin Mip-Splatting -->
+            <div>
+              <div class="tabs-widget">
+                <div class="tabs is-centered is-toggle is-toggle-rounded is-small">
+                  <ul class="is-marginless">
+                    <li><a>Truck</a></li>
+                    <li><a>Train</a></li>
+                    <li><a>Treehill</a></li>
+                    <li><a>Flowers</a></li>
+                    <li><a>Garden</a></li>
+                    <li><a>Stump</a></li>
+                    <li><a>Bicycle</a></li>
+                    <li><a>Room</a></li>
+                    <li><a>Kitchen</a></li>
+                    <li><a>Counter</a></li>
+                    <li><a>Bonsai</a></li>
+                    <li><a>Drjohnson</a></li>
+                    <li><a>Playroom</a></li>
+                  </ul>
+                </div>
+                <div class="content has-text-centered is-size-7-mobile">
+                  'Ours' denotes enhancing the backbone (Mip-Splatting) with CodeName. 
+                  <br>
+                  Fullscreen the videos to view better.
+                </div>
+                <div class="tabs-content">
+                  <div class="item item-comp-mip-truck">
+                    <video poster="" id="id-comp-mip-truck" autoplay controls muted playsinline width="100%" style="border-radius: 10px;">
+                      <source src="./static/videos/cmp_mip/mip-truck-comp-text_batch.mp4"
+                              type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="item item-comp-mip-train">
+                    <video poster="" id="id-comp-mip-train" autoplay controls muted playsinline width="100%" style="border-radius: 10px;">
+                      <source src="./static/videos/cmp_mip/mip-train-comp-text_batch.mp4"
+                              type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="item item-comp-mip-treehill">
+                    <video poster="" id="id-comp-mip-treehill" autoplay controls muted playsinline width="100%" style="border-radius: 10px;">
+                      <source src="./static/videos/cmp_mip/mip-treehill-comp-text_batch.mp4"
+                              type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="item item-comp-mip-flowers">
+                    <video poster="" id="id-comp-mip-flowers" autoplay controls muted playsinline width="100%" style="border-radius: 10px;">
+                      <source src="./static/videos/cmp_mip/mip-flowers-comp-text_batch.mp4"
+                              type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="item item-comp-mip-garden">
+                    <video poster="" id="id-comp-mip-garden" autoplay controls muted playsinline width="100%" style="border-radius: 10px;">
+                      <source src="./static/videos/cmp_mip/mip-garden-comp-text_batch.mp4"
+                              type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="item item-comp-mip-stump">
+                    <video poster="" id="id-comp-mip-stump" autoplay controls muted playsinline width="100%" style="border-radius: 10px;">
+                      <source src="./static/videos/cmp_mip/mip-stump-comp-text_batch.mp4"
+                              type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="item item-comp-mip-bicycle">
+                    <video poster="" id="id-comp-mip-bicycle" autoplay controls muted playsinline width="100%" style="border-radius: 10px;">
+                      <source src="./static/videos/cmp_mip/mip-bicycle-comp-text_batch.mp4"
+                              type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="item item-comp-mip-room">
+                    <video poster="" id="id-comp-mip-room" autoplay controls muted playsinline width="100%" style="border-radius: 10px;">
+                      <source src="./static/videos/cmp_mip/mip-room-comp-text_batch.mp4"
+                              type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="item item-comp-mip-kitchen">
+                    <video poster="" id="id-comp-mip-kitchen" autoplay controls muted playsinline width="100%" style="border-radius: 10px;">
+                      <source src="./static/videos/cmp_mip/mip-kitchen-comp-text_batch.mp4"
+                              type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="item item-comp-mip-counter">
+                    <video poster="" id="id-comp-mip-counter" autoplay controls muted playsinline width="100%" style="border-radius: 10px;">
+                      <source src="./static/videos/cmp_mip/mip-counter-comp-text_batch.mp4"
+                              type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="item item-comp-mip-bonsai">
+                    <video poster="" id="id-comp-mip-bonsai" autoplay controls muted playsinline width="100%" style="border-radius: 10px;">
+                      <source src="./static/videos/cmp_mip/mip-bonsai-comp-text_batch.mp4"
+                              type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="item item-comp-mip-drjohnson">
+                    <video poster="" id="id-comp-mip-drjohnson" autoplay controls muted playsinline width="100%" style="border-radius: 10px;">
+                      <source src="./static/videos/cmp_mip/mip-drjohnson-comp-text_batch.mp4"
+                              type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="item item-comp-mip-playroom">
+                    <video poster="" id="id-comp-mip-playroom" autoplay controls muted playsinline width="100%" style="border-radius: 10px;">
+                      <source src="./static/videos/cmp_mip/mip-playroom-comp-text_batch.mp4"
+                              type="video/mp4">
+                    </video>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End Mip-Splatting -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <section class="container">
+    <div class="content">
+      <p class="title is-3 has-text-centered">
+        Tour over the Optimized Scenes
+      </p>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-one-third">
+          <div class="video-compare-container" id="materialsDiv1">
+            <video class="video" id="materials1" loop playsinline autoPlay muted src="./static/videos/treehill_cat_720p_text_batch.mp4" onplay="resizeAndPlay(this)"></video>
+            <canvas height=0 class="videoMerge" id="materials1Merge" style="border-radius: 10px;"></canvas>
+          </div>
+        </div>
+  
+        <div class="column is-one-third">
+          <div class="video-compare-container" id="materialsDiv2">
+            <video class="video" id="materials2" loop playsinline autoPlay muted src="./static/videos/truck_cat_720p_text_batch.mp4" onplay="resizeAndPlay(this)"></video>
+            <canvas height=0 class="videoMerge" id="materials2Merge" style="border-radius: 10px;"></canvas>
+          </div>
+        </div>
+  
+        <div class="column is-one-third">
+          <div class="video-compare-container" id="materialsDiv3">
+            <video class="video" id="materials3" loop playsinline autoPlay muted src="./static/videos/garden_cat_720p_text_batch.mp4" onplay="resizeAndPlay(this)"></video>
+            <canvas height=0 class="videoMerge" id="materials3Merge" style="border-radius: 10px;"></canvas>
+          </div>
+        </div>
+      </div>
+      <p class="subtitle has-text-centered">
+        Please click the videos to fullscreen for better view.
+      </p>
+    </div>
+  </section>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+        <h2 class="title is-3">Method Overview</h2>
+        <img alt="Architecture" src="./static/images/pipeline.png" width="100%"/>
+      </div>
+    </div>
+    <div class="content has-text-justified">
+      <p>
+        CodeName determines the rendering resolution for each 3DGS optimization step with our resolution scheduling method. 
+        The insight of the resolution scheduling is to gradually fit 3DGS to higher level of frequency components in the training views throughout the entire optimization process. 
+        By directing the downsampling of training views with our scheduler, we significantly reduce the time cost for 3DGS optimization while preserving the rendering quality. 
+        We further manage the growth of Gaussian primitives, which cooperates with the scheduled rendering resolution. It prevents possible over-densification issues during the low-resolution optimization phase and further accelerates the optimization with suppressed primitive growth. 
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+        <h2 class="title is-3">CodeName Improving SOTA</h2>
+        <div class="content has-text-justified">
+          Quantitative comparisons with existing 3DGS fast optimization methods. 
+          With CodeName, we finish 3DGS optimization within 200 seconds while achieving significantly higher rendering quality compared with the other methods. 
+          ``Ours'' in the table reports the performance of equipping CodeName to Taming-3DGS.
+          Time is reported in minutes. 
+        </div>
+        <img alt="Architecture" src="./static/images/table1-notext.png" width="100%"/>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+        <h2 class="title is-3">CodeName Enhancing Backbones</h2>
+        <div class="content has-text-justified">
+          Quantitative results of accelerating various 3DGS backbones using CodeName. 
+          Plugging CodeName into different backbones, their optimization speed is largely improved by 45.7% on average. 
+          Most prominently, CodeName achieves acceleration with negligible compromise and even improvement in the rendering quality. 
+          The results advocate that a reasonable computational resource allocation across the optimization process can largely boost the optimization while preserving the rendering quality. 
+          ''Revising-3DGS*'' denotes our reproduction of the paper based on the Taming-3DGS codebase. 
+          Time is reported in minutes. 
+        </div>
+        <img alt="Architecture" src="./static/images/table2-notext.png" width="100%"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+<pre><code>@inproceedings{CodeName,
+  title     = {CodeName},
+  author    = {AUTHOR},
+  booktitle = {CVPR},
+  year      = {2026}
+}</code></pre>
+  </div>
+</section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('.video-compare-container').forEach(function (container, index) {
+      console.log("Index of the container:", index);
+      container.addEventListener('click', function () {
+        if (index === 0) {
+          this.classList.toggle('expand-right');
+        } else if (index === 2) {
+          this.classList.toggle('expand-left');
+        } else {
+          this.classList.toggle('expanded');
+        }
+      });
+    });
+  });
+
+  const duration=3000
+  function setupVideo(videoId, pauseDuration) {
+    const video = document.getElementById(videoId);
+    video.addEventListener('ended', function() {
+      setTimeout(function() {
+        video.currentTime = 0; // 重置视频
+        video.play(); // 重新播放
+      }, pauseDuration);
+    });
+    // video.play(); // 开始播放
+  }
+  setupVideo('id-comp-taming-train', duration);
+  setupVideo('id-comp-taming-truck', duration);
+  setupVideo('id-comp-taming-drjohnson', duration);
+  setupVideo('id-comp-taming-playroom', duration);
+  setupVideo('id-comp-taming-bicycle', duration);
+  setupVideo('id-comp-taming-garden', duration);
+  setupVideo('id-comp-taming-stump', duration);
+  setupVideo('id-comp-taming-flowers', duration);
+  setupVideo('id-comp-taming-treehill', duration);
+  setupVideo('id-comp-taming-room', duration);
+  setupVideo('id-comp-taming-kitchen', duration);
+  setupVideo('id-comp-taming-counter', duration);
+  setupVideo('id-comp-taming-bonsai', duration);
+  setupVideo('id-comp-3dgs-train', duration);
+  setupVideo('id-comp-3dgs-truck', duration);
+  setupVideo('id-comp-3dgs-drjohnson', duration);
+  setupVideo('id-comp-3dgs-playroom', duration);
+  setupVideo('id-comp-3dgs-bicycle', duration);
+  setupVideo('id-comp-3dgs-garden', duration);
+  setupVideo('id-comp-3dgs-stump', duration);
+  setupVideo('id-comp-3dgs-flowers', duration);
+  setupVideo('id-comp-3dgs-treehill', duration);
+  setupVideo('id-comp-3dgs-room', duration);
+  setupVideo('id-comp-3dgs-kitchen', duration);
+  setupVideo('id-comp-3dgs-counter', duration);
+  setupVideo('id-comp-3dgs-bonsai', duration);
+  setupVideo('id-comp-mip-train', duration);
+  setupVideo('id-comp-mip-truck', duration);
+  setupVideo('id-comp-mip-drjohnson', duration);
+  setupVideo('id-comp-mip-playroom', duration);
+  setupVideo('id-comp-mip-bicycle', duration);
+  setupVideo('id-comp-mip-garden', duration);
+  setupVideo('id-comp-mip-stump', duration);
+  setupVideo('id-comp-mip-flowers', duration);
+  setupVideo('id-comp-mip-treehill', duration);
+  setupVideo('id-comp-mip-room', duration);
+  setupVideo('id-comp-mip-kitchen', duration);
+  setupVideo('id-comp-mip-counter', duration);
+  setupVideo('id-comp-mip-bonsai', duration);
+</script>
+
+</body>
+</html>
